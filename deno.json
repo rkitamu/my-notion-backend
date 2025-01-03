@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "dev": "deno serve --watch -R main.ts",
+    "dev": "deno serve --watch -R src/main.ts",
     "test": "deno test --allow-net"
   },
   "imports": {
