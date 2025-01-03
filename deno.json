@@ -1,6 +1,7 @@
 {
   "tasks": {
-    "dev": "deno run --allow-net --watch -R src/app.ts",
+    "start": "deno run --allow-net --allow-env --env-file=.env/production.env src/app.ts",
+    "dev": "deno run --allow-net --allow-env --watch -R --env-file=.env/development.env src/app.ts",
     "test": "deno test --allow-net"
   },
   "imports": {
