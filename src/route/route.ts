@@ -1,7 +1,7 @@
 import { Route } from "./type.ts";
-import { updateTimeline } from "./finance.route.ts";
+import { updateTimelineRoute } from "./finance.route.ts";
 
-const routes: Route[] = [updateTimeline];
+const routes: Route[] = [updateTimelineRoute];
 
 export async function router(req: Request): Promise<Response> {
   const url = new URL(req.url);
